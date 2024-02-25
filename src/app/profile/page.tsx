@@ -32,7 +32,7 @@ try {
         <div className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-white font-bold">
             <div className="bg-gray-800 p-8 rounded-lg shadow-md">
                 <h1 className="text-3xl mb-4">Welcome to Your Profile Page</h1>
-                <h2>{data==='nothing'?"nothing":<Link className="m-4 bg-green-500 hover:bg-blue-600 text-white font-bold  px-4 rounded" href={`/profile/${data}`}>{data}</Link>}</h2>
+                <h2>{data==='nothing'?"click on the getuserdata button":<Link className="m-4 bg-green-500 hover:bg-blue-600 text-white font-bold  px-4 rounded" href={`/profile/${data}`}>{data}</Link>}</h2>
                 <hr className="border-gray-600 mb-4" />
                 <button onClick={logout} className="m-4 bg-pink-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
                     Logout
