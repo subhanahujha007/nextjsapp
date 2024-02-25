@@ -8,7 +8,7 @@ export async function POST(request:NextRequest) {
     try {
         const reqbody=await request.json()
         const {email,password}=reqbody
-        const user=await userModel.findOne({email}).select("-password")
+        const user=await userModel.findOne({email})
         if(!user){
             return NextResponse.json({message:"user doesnt exists"})
         }
@@ -29,6 +29,7 @@ const response=NextResponse.json({
 response.cookies.set("token",token,{httpOnly:true})
 return response;
     } catch (error:any) {
+        console.log(error)
       return NextResponse.json({error:error.message},{status:500})
 
     }
