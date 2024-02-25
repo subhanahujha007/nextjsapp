@@ -28,6 +28,6 @@ forgotpasswordtokenexpiry:Date,
 verifytoken:String,
 verifytokenexpiry:Date,
 })
-const usermodel=  mongoose.model("users",userschema)
-export default usermodel
+const userModel= mongoose.models.users || mongoose.model("users",userschema) 
+export default userModel
 
