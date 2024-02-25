@@ -90,7 +90,7 @@ export default function Loginpage() {
         </button>
       </form>
       <p className="mt-4">
-        Don't have an account?{" "}
+        Dont have an account?{" "}
         <Link href="/signup">
           Sign up
         </Link>
